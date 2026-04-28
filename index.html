@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="logo.png">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<title>TTC Hub</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:white;
+}
+
+/* Top Bar */
+.topbar{
+    display:flex;
+justify-content:space-between;
+background:rgb(1, 84, 123);
+padding:8px 40px;
+}
+.topbar a{
+
+color:white;
+text-decoration: none;
+font-size: 14px;
+
+
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+border-bottom:7px solid rgb(190, 2, 2);
+}
+.nav{
+  align-items: center;
+display: flex;
+justify-content: space-around;
+
+}
+.link{
+    margin-left: 700px;
+
+}
+.nav a{
+  
+margin:0 15px;
+text-decoration:none;
+color:green;
+font-weight:bold;
+
+}
+
+.link a:hover{
+color:rgb(9, 89, 174);
+font-size:20px ;
+border: 1px solid rgb(194, 194, 194);
+border-radius: 10px;
+padding: 8px;
+}
+.link a:active{
+    color: rgb(190, 2, 2);
+}
+
+/* Hero */
+
+.hero{
+height:500px;
+background:url("images/bg.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.story{
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.para1{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+    border:1px solid rgb(219, 219, 219) ;
+    padding: 20px;
+    margin-left: 90px;
+    line-height: 1.4;
+}
+.storyPic{
+   border-radius: 5%;
+}
+.storyhead{
+    margin-top: -10px;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    margin-left: 90px;
+    text-transform: uppercase;
+}
+.storyspan{
+    color: rgb(9, 89, 174);
+}
+.hero h1{
+font-size:50px;
+background:rgba(0,0,0,0.6);
+padding:12px 20px;
+border-left:6px solid yellow;
+}
+
+.hero p{
+font-size:20px;
+background:rgba(0,128,0,0.7);
+padding:8px 15px;
+}
+.logo{
+   height: 110px; 
+   width: 100px;
+   margin-left: 15px;
+}
+/* Button */
+
+button{
+background:yellow;
+border:none;
+padding:12px 25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:rgb(9, 89, 174);
+color:white;
+}
+
+/* Section */
+
+.section{
+padding:70px 10%;
+text-align:center;
+}
+
+.section h2{
+color:rgb(190, 2, 2);
+font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* Stats */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top: 100px;
+}
+
+.stats div{
+font-size:40px;
+font-weight:bold;
+color:rgb(9, 89, 174);
+padding-bottom:5px;
+}
+
+.statspan{
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.partnerdiv{
+    display: flex;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: space-around;
+    
+ 
+}
+
+.partnercont{
+    margin: 30px;
+    color: rgb(85, 85, 85);
+    justify-content: space-around;
+}
+
+.partnerconhead{
+text-transform: capitalize;
+text-align: center;
+color:rgb(5, 94, 5);
+}
+
+.partnerhead{
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+/* Courses */
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+border:2px solid green;
+padding:20px;
+border-radius:8px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+color:black;
+}
+
+.card:hover{
+border-color:rgb(190, 2, 2);
+background:#f0f8ff;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Same proportion for all */
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Pathway */
+
+.pathway{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+font-weight:bold;
+color:green;
+}
+
+/* Blue Highlight Section */
+
+.highlight{
+background:#e6f2ff;
+padding:60px;
+margin-top:40px;
+}
+
+/* iframe */
+iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 100px;
+    }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 70px;
+    margin-top: 40px;
+    height: auto;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .social-links a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+footer .social-links a:active {
+    color: #c2c3c4;
+}
+
+.small {
+    margin: 20px;
+}
+.otherlinks .prt {
+    text-decoration: none;
+    color: grey;
+}
+.prt {
+    font-size: 1rem;
+}
+.white-emoji {
+  filter: brightness(0) invert(1); /* turns emoji white */
+  font-size: 20px;
+  margin-right: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<div><span class="white-emoji">📞</span><a href="https://wa.me/92336661117?text=Hello%20Naz,%20I%20found%20your%20website!" >+92 336 661117</a></div>
+<div> <span class="white-emoji">✉</span><a href="mailto:careers.hub@zabtech.edu.pk">careers.hub@zabtech.edu.pk</a></div>
+<div><span class="white-emoji">📌</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Pak German Technical Training Centre on Hub Chowki Road, near Hub Bypass, in Hub, Balochistan</a></div>
+<div><span class="white-emoji">⏱</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Monday - Friday, 9:00 AM to 5:00 PM</p></a></div>
+</div>
+
+<header>
+
+
+<nav>  
+    <div class="nav">
+    <div class="logo">
+<a href=""><img src="logo.png" alt="" class="logo"></a></div>
+<div class="link">
+<a href="index.html">Home</a>
+<a href="#about">About</a>
+<a href="#trade">Trade</a>
+<a href="#partner">Partner</a>
+<!-- <a href="#">Programs</a> -->
+<!-- <a href="#">Campus</a> -->
+<a href="#">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Technical Training Center Hub</h1>
+
+<p>Empowering Youth with Technical Skills</p>
+
+<br>
+
+<button>Apply Now</button>
+
+</section>
+
+<section class="section" id="about">
+<div class="story"><div><img src="images/story.jpeg" alt="" class="storyPic"></div>
+<div>
+<h2 class="storyhead">TTC Hub <span class="storyspan">Story</span></h2>
+
+<p class="para1">
+The Technical Training Center Hub began as a small initiative with a big vision: to bridge the gap between traditional education and industry-ready skills. Founded by a group of educators and industry experts, the center started with just a few workshops in trades like welding, electrical work, and automotive repair.
+
+Word quickly spread as students experienced hands-on learning, gaining not only technical expertise but also confidence to pursue meaningful careers. Over the years, the hub expanded its programs to include modern fields like CNC machining, HVACR, web design, graphic design, culinary arts, and supply chain logistics.
+
+Today, the hub stands as a beacon for practical education, where innovation meets tradition. Its mission remains clear: empower individuals with the skills, certifications, and real-world experience they need to thrive in technical industries, while fostering a community where learning is active, collaborative, and transformative.
+</p>
+</div>
+</div>
+<div class="stats">
+
+<div>1000+ <br> <span class="statspan">Students</span></div>
+<div>30+ <br> <span class="statspan">Staff</span></div>
+<div>10+ <br> <span class="statspan">Trades</span></div>
+<div>10+ <br> <span class="statspan">Years</span></div>
+
+</div>
+
+</section>
+<section class="section" style="background-color: rgba(236, 248, 236, 0.7);" id="partner">
+    <h2 class="partnerhead">Partners</h2>
+    <div class="partnerdiv">
+        <div class="partnercont">
+            <img src="images/gob-removebg-preview.png" alt="Government of Balochistan Logo" class="partnerlogo" style="height: 100px; width: 110px; margin-left: 25%;">
+            <h3 class="partnerconhead">Donor</h3>
+            <h3 class="partnerconhead">Government of Balochistan</h3>
+        <p class="partnerpara">The Government of Balochistan has taken several initiatives to promote technical education and vocational training in the province, recognizing that skill development is essential for economic growth and employment generation. One of the key steps in this direction has been the adoption and establishment of Technical Training Centers (TTCs) across different districts.
+
+These centers are typically managed under organizations like the Technical Education and Vocational Training Authority, which operates under the provincial government. TEVTA Balochistan is responsible for designing training programs, managing institutes, and ensuring that courses meet industry demands.
+
+The purpose of these Technical Training Centers is to equip youth with practical skills in trades such as electrical work, plumbing, welding, information technology, automotive repair, and construction. By focusing on hands-on training, the government aims to make young people job-ready and capable of starting their own small businesses.
+
+The Government of Balochistan has also collaborated with national and international organizations to improve the quality of training. These partnerships help in updating curricula, training instructors, and providing modern equipment to the centers. Special programs are often introduced for women and underprivileged communities to ensure inclusive development.
+
+Another important objective behind adopting Technical Training Centers is to reduce unemployment and poverty in the province. Since Balochistan has a large youth population but limited industrial development, skill-based education provides an alternative pathway for income generation, both locally and abroad.
+
+In conclusion, the adoption of Technical Training Centers by the Government of Balochistan reflects a strategic effort to empower its population through skills, enhance employability, and support long-term socio-economic development in the region.
+</p>
+        </div>
+        <div class="partnercont">
+             <img src="images/zabtech-removebg-preview.png" alt="" class="partnerlogo" style="height: 100px; width: 200px;">
+             <h3 class="partnerconhead">Adopted by</h3>
+             <h3 class="partnerconhead">SZABIST ZABTech (iTVE)</h3>
+        <p class="partnerpara">SZABIST ZABTech is a well-known vocational and technical education network in Pakistan, working under the umbrella of the Shaheed Zulfikar Ali Bhutto Institute of Science and Technology. It focuses on providing demand-driven skills and practical training to youth, especially in underdeveloped and semi-urban regions.
+
+One of its important initiatives is the establishment and operation of the ZABTech Technical Training Center in Hub, a key industrial city in Balochistan. This center was adopted to enhance access to quality technical education for the local population and to support the growing industrial sector in the area.
+
+The ZABTech Hub training center offers a variety of short courses and diploma programs in trades such as electrical work, mechanical maintenance, welding, civil construction, information technology, and other industry-relevant skills. The training programs are designed in consultation with industry experts to ensure that students gain practical, job-ready competencies.
+
+A major objective of this center is to empower the youth of Hub by providing them with employable skills. Since Hub is an industrial zone with factories and manufacturing units, the availability of skilled labor benefits both job seekers and employers. Graduates from the center can find employment locally or even abroad, contributing to economic development.
+
+In addition, ZABTech emphasizes inclusivity by offering opportunities for women and disadvantaged communities. The institute often provides career counseling, internships, and job placement support to help trainees transition smoothly into the workforce.
+
+In conclusion, the ZABTech Technical Training Center in Hub represents a significant effort by SZABIST ZABTech to promote skill development, reduce unemployment, and support industrial growth in Balochistan through quality technical education.
+</p> 
+        </div>
+        <div class="partnercont">
+             <img src="images/Blogo-removebg-preview.png" alt="" class="partnerlogo"  style="height: 100px; width: 150px; margin-left: 13%;">
+             <h3 class="partnerconhead">Monitoring Agency</h3>
+             <h3 class="partnerconhead">B-TEVTA</h3>
+        <p class="partnerpara">Balochistan Technical Education and Vocational Training Authority (BTEVTA) is the main government body responsible for promoting technical and vocational education in the province of Balochistan. It operates under the Government of Balochistan to develop skilled manpower by establishing and adopting Technical Training Centers (TTCs) across the region.
+
+BTEVTA has adopted a wide network of Technical Training Centers to provide structured, practical, and industry-focused training to young people. These centers are located in different districts, including remote and underdeveloped areas, to ensure equal access to skill development opportunities.
+
+The Technical Training Centers offer various courses in trades such as electrical work, plumbing, welding, refrigeration and air conditioning, information technology, and automotive mechanics. The training programs focus on hands-on learning so that students gain practical experience along with basic theoretical knowledge.
+
+One of the main goals of BTEVTA in adopting these centers is to reduce unemployment and improve living standards in the province. By aligning training programs with market needs, the authority ensures that students develop skills that are in demand in both local and international job markets.
+
+BTEVTA also works with different organizations to improve the quality of training by updating course content, training instructors, and providing modern equipment. In addition, special programs are introduced to encourage participation from women and support disadvantaged communities.
+
+In conclusion, BTEVTA’s adoption of Technical Training Centers shows its strong commitment to developing skills, creating job opportunities, and supporting the economic growth of Balochistan.
+</p>
+        </div>
+         <div class="partnercont">
+             <img src="images/BPPPA.png" alt="" class="partnerlogo"  style="height: 100px; width: 130px; margin-left: 13%;">
+             <h3 class="partnerconhead">Implementing Partner</h3>
+             <h3 class="partnerconhead">BPPPA</h3>
+        <p class="partnerpara">The collaboration between TTC and its implementing partner, the Balochistan Public Private Partnership Authority (BPPPA), represents a strategic effort to strengthen development initiatives in the region through effective public-private collaboration. By leveraging the expertise, resources, and institutional capacity of both entities, this partnership aims to deliver sustainable infrastructure and service solutions tailored to the needs of Balochistan.
+
+As an implementing partner, BPPPA plays a crucial role in facilitating project design, ensuring regulatory compliance, and promoting transparency in execution. Its mandate to foster partnerships between government bodies and private sector stakeholders aligns closely with TTC’s development objectives, creating a shared framework for innovation and efficiency.
+
+Through this collaboration, TTC benefits from BPPPA’s local knowledge and governance structures, enabling smoother project implementation and stronger community engagement. At the same time, BPPPA gains from TTC’s technical expertise and strategic approach, enhancing its ability to deliver impactful public-private partnership projects.
+
+Overall, the TTC–BPPPA partnership stands as a model for cooperative development, demonstrating how aligned goals and shared responsibilities can lead to meaningful and lasting outcomes in Balochistan.
+</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="section" id="trade">
+
+<h2>Our Trades</h2>
+<div class="courses">
+
+<div class="card">
+<img src="images/computer.jpeg" alt="Computer Operator">
+<h3>Computer Operator (Female)</h3>
+<p>Technology training for women</p>
+</div>
+
+<div class="card">
+<img src="images/beautician.jpeg" alt="Hair and Beauty">
+<h3>Hair and Beauty Services</h3>
+<p>Professional beauty training</p>
+</div>
+
+<div class="card">
+<img src="images/web.jpg" alt="Web Development">
+<h3>Web Designing and Development</h3>
+<p>Design and develop websites.</p>
+</div>
+
+<div class="card">
+<img src="images/pipefitter.jpg" alt="Pipe fitter">
+<h3>Pipe fitter</h3>
+<p>Pipe installation and maintenance.</p>
+</div>
+
+<div class="card">
+<img src="images/welding.jpg" alt="Welding">
+<h3>Welding</h3>
+<p>Join metals using heat.</p>
+</div>
+
+<div class="card">
+<img src="images/Industrialgarments.jpeg" alt="Industrial Garments">
+<h3>Industrial Garments</h3>
+<p>Mass production and export of clothing.</p>
+</div>
+
+<div class="card">
+<img src="images/machine.png" alt="Machinist">
+<h3>Machinist</h3>
+<p>Operate and maintain machinery.</p>
+</div>
+
+<div class="card">
+<img src="images/cnc.jpg" alt="CNC">
+<h3>CNC</h3>
+<p>Program and operate CNC machines.</p>
+</div>
+
+<div class="card">
+<img src="images/electrician.jpg" alt="Electrician">
+<h3>General Electrician</h3>
+<p>Installation and maintenance of electrical systems.</p>
+</div>
+
+<div class="card">
+<img src="images/industrialelectrician.jpeg" alt="Industrial Electrician">
+<h3>Industrial Electrician</h3>
+<p>Install and maintain industrial electrical systems.</p>
+</div>
+
+<div class="card">
+<img src="images/fashion designing.jpg" alt="Fashion Designing">
+<h3>Fashion Designing</h3>
+<p>Creating and styling clothing designs.</p>
+</div>
+
+<div class="card">
+<img src="images/solar.jpeg" alt="Solar Technology">
+<h3>Solar Technology</h3>
+<p>Solar installation training</p>
+</div>
+
+<div class="card">
+<img src="images/culinary.jpg" alt="Culinary Arts">
+<h3>Culinary Arts</h3>
+<p>Preparation and presentation of food.</p>
+</div>
+
+<div class="card">
+<img src="images/graphics.jpg" alt="Graphic Designing">
+<h3>Graphic Designing</h3>
+<p>Visual communication through digital design.</p>
+</div>
+
+<div class="card">
+<img src="images/auto.jpeg" alt="Auto Mechanics">
+<h3>Auto Mechanics</h3>
+<p>Repair and maintain vehicles.</p>
+</div>
+
+<div class="card">
+<img src="images/bike.jpeg" alt="Motorcycle Mechanics">
+<h3>Motorcycle Mechanics</h3>
+<p>Repair and maintain motorcycles.</p>
+</div>
+
+<div class="card">
+<img src="images/hvac.jpeg" alt="HVACR">
+<h3>HVACR</h3>
+<p>Install and service heating-cooling systems.</p>
+</div>
+
+<div class="card">
+<img src="images/logistics.jpeg" alt="Supply Chain">
+<h3>Supply Chain Logistics</h3>
+<p>Manage flow of goods.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight" >
+
+<h2 class="section" style="color: rgb(190, 2, 2); font-family: 'Times New Roman'; text-transform: uppercase; font-size: 30px; letter-spacing: 1.5px;">Learning Pathway</h2>
+
+<div class="pathway">
+
+<div>Training</div>
+<div>Learning</div>
+<div>Practice</div>
+<div>Certification</div>
+<div>Job Placement</div>
+<div>Self Employment</div>
+
+</div>
+
+</section>
+<section>
+     <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.4305267985455!2d66.85339687259383!3d25.019459477825766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb36e61d49982c3%3A0xbf9e1f478ebf292!2sTechnical%20Training%20Centre!5e0!3m2!1sen!2s!4v1747987400175!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+</section>
+
+ <footer style="margin-top: 100px;" id="contact">
+      <div class="social-links">     
+       <a href="https://www.facebook.com/share/15FbZraBwF/" target="_blank" class="fab fa-facebook-f"></a>
+       <a href="https://x.com/SzabistZabtech" target="_blank" class="fab fa-twitter"></a>
+       <a href="https://wa.me/92336661117?text=Hello%20Naz,%20I%20found%20your%20website!" target="_blank" class="fab fa-whatsapp"></a> 
+       <a href="https://www.instagram.com/zabtech.hub?igsh=OTd1amF5cmw1dHp0" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/szabistzabtech?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin-in"></a>
+    </div>
+    <hr>
+    <div class="small">
+        <small>&copy;Copyright 2026 <span style="color: rgb(192, 192, 192);">Technical Training Center Hub</span> All Rights Reserved.</small>
+      </div>
+    <div class="otherlinks">
+       
+        <a class="prt" href="privacy.html"><small>Privacy Policy</small></a>&emsp;
+        <a class="prt" href="terms.html"><small>Terms & Conditions</small></a>
+        </div>
+    </footer>
+</body>
+</html>

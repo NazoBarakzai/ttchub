@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<title>TTC Hub</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:white;
+}
+
+/* Top Bar */
+.topbar{
+    display:flex;
+justify-content:space-between;
+background:rgb(1, 84, 123);
+padding:8px 40px;
+}
+.topbar a{
+
+color:white;
+text-decoration: none;
+
+
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+border-bottom:7px solid rgb(190, 2, 2);
+}
+nav{
+    align-items: center;
+display: flex;
+
+}
+.link{
+    margin-left: 1100px;
+
+}
+nav a{
+
+margin:0 15px;
+text-decoration:none;
+color:green;
+font-weight:bold;
+
+}
+
+.link a:hover{
+color:rgb(9, 89, 174);
+font-size:20px ;
+border: 1px solid rgb(194, 194, 194);
+border-radius: 10px;
+padding: 8px;
+}
+.link a:active{
+    color: rgb(190, 2, 2);
+}
+
+/* Hero */
+
+.hero{
+height:500px;
+background:url("images/bg.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.story{
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.para1{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+    border:1px solid rgb(219, 219, 219) ;
+    padding: 20px;
+    margin-left: 90px;
+    line-height: 1.4;
+}
+.storyPic{
+   border-radius: 5%;
+}
+.storyhead{
+    margin-top: -10px;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    margin-left: 90px;
+    text-transform: uppercase;
+}
+.storyspan{
+    color: rgb(9, 89, 174);
+}
+.hero h1{
+font-size:50px;
+background:rgba(0,0,0,0.6);
+padding:12px 20px;
+border-left:6px solid yellow;
+}
+
+.hero p{
+font-size:20px;
+background:rgba(0,128,0,0.7);
+padding:8px 15px;
+}
+.logo{
+   height: 110px; 
+   width: 110px;
+   margin-left: 15px;
+}
+/* Button */
+
+button{
+background:yellow;
+border:none;
+padding:12px 25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:rgb(9, 89, 174);
+color:white;
+}
+
+/* Section */
+
+.section{
+padding:70px 10%;
+text-align:center;
+}
+
+.section h2{
+color:rgb(190, 2, 2);
+font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* Stats */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top: 100px;
+}
+
+.stats div{
+font-size:40px;
+font-weight:bold;
+color:rgb(9, 89, 174);
+padding-bottom:5px;
+}
+
+.statspan{
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.partnerdiv{
+    display: flex;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: space-around;
+    
+ 
+}
+
+.partnercont{
+    margin: 30px;
+    color: rgb(85, 85, 85);
+}
+
+.partnerconhead{
+text-transform: capitalize;
+text-align: center;
+color:rgb(5, 94, 5);
+}
+
+.partnerhead{
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+/* Courses */
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+border:2px solid green;
+padding:20px;
+border-radius:8px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+color:black;
+}
+
+.card:hover{
+border-color:rgb(190, 2, 2);
+background:#f0f8ff;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Same proportion for all */
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Pathway */
+
+.pathway{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+font-weight:bold;
+color:green;
+}
+
+/* Blue Highlight Section */
+
+.highlight{
+background:#e6f2ff;
+padding:60px;
+margin-top:40px;
+}
+
+/* iframe */
+iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 70px;
+    margin-top: 40px;
+    height: auto;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .social-links a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+footer .social-links a:active {
+    color: #c2c3c4;
+}
+
+.small {
+    margin: 20px;
+}
+.otherlinks .prt {
+    text-decoration: none;
+    color: grey;
+}
+.prt {
+    font-size: 1rem;
+}
+.white-emoji {
+  filter: brightness(0) invert(1); /* turns emoji white */
+  font-size: 20px;
+  margin-right: 8px;
+}
+  .container {
+  
+      margin: 40px;
+      color: #737373;
+      text-align: left;
+      font-family: 'Times New Roman';
+  
+    }
+.container h1{
+    color:rgb(9, 89, 174) ;
+
+    text-transform: uppercase;
+}
+.container h2{
+    color:rgb(80, 80, 80) ;
+    
+}
+.privacybody{
+    background-color: rgba(236, 236, 236, 0.7);
+}
+</style>
+</head>
+<body class="privacybody">
+     <div class="topbar">
+<div><span class="white-emoji">📞</span><a href="https://wa.me/92336661117?text=Hello%20Naz,%20I%20found%20your%20website!" >+92 336 661117</a></div>
+<div> <span class="white-emoji">✉️</span><a href="mailto:careers.hub@zabtech.edu.pk">careers.hub@zabtech.edu.pk</a></div>
+<div><span class="white-emoji">📌</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Pak German Technical Training Centre on Hub Chowki Road, near Hub Bypass, in Hub, Balochistan</a></div>
+<div><span class="white-emoji">📌</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Monday - Friday, 9:00 AM to 5:00 PM</p></a></div>
+</div>
+
+<header>
+
+
+<nav>
+    <div class="logo">
+<a href=""><img src="logo.png" alt="" class="logo"></a></div>
+<div class="link">
+<a href="index.html">Home</a>
+<a href="#about">About</a>
+<a href="#trade">Trade</a>
+<a href="#partner">Partner</a>
+<!-- <a href="#">Programs</a> -->
+<!-- <a href="#">Campus</a> -->
+<a href="#">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+</header>
+
+  <div class="container">
+    <h1 >Privacy Policy</h1>
+    <p>Effective Date:  March 13, 2026</p>
+
+    <p>We value your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you use our website.</p>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li>Personal Information: such as name, email address, etc., when voluntarily submitted.</li>
+      <li>Non-Personal Information: such as browser type, device information, and usage data.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide and improve our services</li>
+      <li>To send updates, promotions, or other relevant content</li>
+      <li>To respond to inquiries and provide support</li>
+    </ul>
+
+    <h2>3. Sharing of Information</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. We may share information with trusted partners to help operate our website or conduct our business, as long as those parties agree to keep this information confidential.</p>
+
+    <h2>4. Cookies</h2>
+    <p>We may use cookies to enhance user experience and analyze site usage. You can choose to disable cookies through your browser settings.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You may request access to or deletion of your personal information. Please contact us to make such a request.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: <strong>.com</strong></p>
+  </div>
+
+ <footer style="margin-top: 100px;" id="contact">
+      <div class="social-links">     
+       <a href="https://www.facebook.com/share/15FbZraBwF/" target="_blank" class="fab fa-facebook-f"></a>
+       <a href="https://x.com/SzabistZabtech" target="_blank" class="fab fa-twitter"></a>
+       <a href="https://wa.me/92336661117?text=Hello%20Naz,%20I%20found%20your%20website!" target="_blank" class="fab fa-whatsapp"></a> 
+       <a href="https://www.instagram.com/zabtech.hub?igsh=OTd1amF5cmw1dHp0" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/szabistzabtech?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin-in"></a>
+    </div>
+    <hr>
+    <div class="small">
+        <small>&copy;Copyright 2026 <span style="color: rgb(192, 192, 192);">Technical Training Center Hub</span> All Rights Reserved.</small>
+      </div>
+    <div class="otherlinks">
+       
+        <a class="prt" href="privacy.html"><small>Privacy Policy</small></a>&emsp;
+        <a class="prt" href="terms.html"><small>Terms & Conditions</small></a>
+        </div>
+    </footer>
+</body>
+</html>
