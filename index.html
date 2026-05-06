@@ -44,12 +44,13 @@ border-bottom:7px solid rgb(190, 2, 2);
 }
 .nav{
   align-items: center;
+  
 display: flex;
 justify-content: space-around;
 
 }
 .link{
-    margin-left: 700px;
+    margin-left: 1150px;
 
 }
 .nav a{
@@ -197,17 +198,22 @@ padding-bottom:5px;
     margin: 30px;
     color: rgb(85, 85, 85);
     justify-content: space-around;
+
+}
+.partnercont img{
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .partnerconhead{
-text-transform: capitalize;
+
 text-align: center;
 color:rgb(5, 94, 5);
 }
 
 .partnerhead{
     font-family: 'Times New Roman';
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 30px;
     letter-spacing: 1.5px;
 }
@@ -308,6 +314,190 @@ footer .social-links a:active {
   font-size: 20px;
   margin-right: 8px;
 }
+ .values{
+    display:flex;
+    justify-content: space-around;
+    
+ }
+ .valuediv{
+    background-color:rgba(236, 248, 236, 0.7) ;
+    margin: 50px;
+    padding: 30px;
+    border: 3px solid rgb(233, 232, 232);
+    color: green;
+    border-radius: 15px;
+   
+    
+ }
+ .valuepara{
+ text-align: justify;
+ font-size: 20px;
+ line-height:1.5em;
+ }
+ .team{
+    display: flex;
+    justify-content: space-around;
+ }
+ .team-member{
+    margin:40px;
+ }
+ .team-member img{
+    width:300px;
+    height: 300px;
+    border-radius: 100%;
+ }
+ .seemore{
+    text-decoration: none;
+ }
+ .why{
+    border: 3px solid rgb(233, 232, 232) ;
+    margin: 40px;
+    padding: 40px;}
+    .whydiv{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.5em;
+        margin: 40px;
+    }
+    /* =========================
+   RESPONSIVE FIX (NO CHANGE TO ORIGINAL CSS)
+========================= */
+
+/* Fix navigation without touching original */
+@media (max-width: 1200px) {
+  .link {
+    margin-left: auto !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .link {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .story {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .storyhead,
+  .para1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .partnerdiv {
+    flex-direction: column;
+  }
+
+  .partnercont img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .values {
+    flex-direction: column;
+  }
+
+  .team {
+    flex-wrap: wrap;
+  }
+
+  .whydiv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .valuediv {
+    margin: 20px;
+  }
+
+  .why {
+    padding: 20px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .section {
+    padding: 40px 5%;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .topbar a {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
 </style>
 </head>
 
@@ -364,7 +554,7 @@ The Technical Training Center Hub began as a small initiative with a big vision:
 
 Word quickly spread as students experienced hands-on learning, gaining not only technical expertise but also confidence to pursue meaningful careers. Over the years, the hub expanded its programs to include modern fields like CNC machining, HVACR, web design, graphic design, culinary arts, and supply chain logistics.
 
-Today, the hub stands as a beacon for practical education, where innovation meets tradition. Its mission remains clear: empower individuals with the skills, certifications, and real-world experience they need to thrive in technical industries, while fostering a community where learning is active, collaborative, and transformative.
+Today, the hub stands as a beacon for practical education, where innovation meets tradition. Its mission remains clear: empower individuals with the skills, certifications, and real-world experience they need to thrive in technical industries, while fostering a community where learning is active, collaborative, and transformative. <a class="seemore" href="#ab">see more . .</a>
 </p>
 </div>
 </div>
@@ -382,20 +572,12 @@ Today, the hub stands as a beacon for practical education, where innovation meet
     <h2 class="partnerhead">Partners</h2>
     <div class="partnerdiv">
         <div class="partnercont">
-            <img src="images/gob-removebg-preview.png" alt="Government of Balochistan Logo" class="partnerlogo" style="height: 100px; width: 110px; margin-left: 25%;">
+            <img src="images/gob-removebg-preview.png" alt="Government of Balochistan Logo" class="partnerlogo" style="height: 100px; width: 110px;">
             <h3 class="partnerconhead">Donor</h3>
             <h3 class="partnerconhead">Government of Balochistan</h3>
-        <p class="partnerpara">The Government of Balochistan has taken several initiatives to promote technical education and vocational training in the province, recognizing that skill development is essential for economic growth and employment generation. One of the key steps in this direction has been the adoption and establishment of Technical Training Centers (TTCs) across different districts.
+        <p class="partnerpara">The Government of Balochistan serves as the primary donor and supporter of the Technical Training Center Hub, playing a vital role in its establishment, funding, and overall development. Through its commitment to skill development and youth empowerment, the government provides financial resources, infrastructure, and policy support to ensure the effective functioning of the center. It also works closely with institutions like the Technical Education and Vocational Training Authority to design relevant training programs, monitor quality standards, and align courses with market needs.
 
-These centers are typically managed under organizations like the Technical Education and Vocational Training Authority, which operates under the provincial government. TEVTA Balochistan is responsible for designing training programs, managing institutes, and ensuring that courses meet industry demands.
-
-The purpose of these Technical Training Centers is to equip youth with practical skills in trades such as electrical work, plumbing, welding, information technology, automotive repair, and construction. By focusing on hands-on training, the government aims to make young people job-ready and capable of starting their own small businesses.
-
-The Government of Balochistan has also collaborated with national and international organizations to improve the quality of training. These partnerships help in updating curricula, training instructors, and providing modern equipment to the centers. Special programs are often introduced for women and underprivileged communities to ensure inclusive development.
-
-Another important objective behind adopting Technical Training Centers is to reduce unemployment and poverty in the province. Since Balochistan has a large youth population but limited industrial development, skill-based education provides an alternative pathway for income generation, both locally and abroad.
-
-In conclusion, the adoption of Technical Training Centers by the Government of Balochistan reflects a strategic effort to empower its population through skills, enhance employability, and support long-term socio-economic development in the region.
+In addition, the government facilitates partnerships with national and international organizations to enhance training capacity, upgrade equipment, and improve instructional methods. Special focus is given to inclusivity by introducing programs for women, marginalized groups, and unemployed youth, ensuring equal access to skill development opportunities. By acting as a donor and enabler, the Government of Balochistan aims to create a skilled workforce capable of contributing to local industries and exploring employment opportunities beyond the province. Ultimately, this support reflects the government’s long-term vision of reducing poverty, boosting economic growth, and promoting self-reliance among its citizens.
 </p>
         </div>
         <div class="partnercont">
@@ -416,7 +598,7 @@ In conclusion, the ZABTech Technical Training Center in Hub represents a signifi
 </p> 
         </div>
         <div class="partnercont">
-             <img src="images/Blogo-removebg-preview.png" alt="" class="partnerlogo"  style="height: 100px; width: 150px; margin-left: 13%;">
+             <img src="images/Blogo-removebg-preview.png" alt="" class="partnerlogo"  style="height: 100px; width: 150px;">
              <h3 class="partnerconhead">Monitoring Agency</h3>
              <h3 class="partnerconhead">B-TEVTA</h3>
         <p class="partnerpara">Balochistan Technical Education and Vocational Training Authority (BTEVTA) is the main government body responsible for promoting technical and vocational education in the province of Balochistan. It operates under the Government of Balochistan to develop skilled manpower by establishing and adopting Technical Training Centers (TTCs) across the region.
@@ -433,7 +615,7 @@ In conclusion, BTEVTA’s adoption of Technical Training Centers shows its stron
 </p>
         </div>
          <div class="partnercont">
-             <img src="images/BPPPA.png" alt="" class="partnerlogo"  style="height: 100px; width: 130px; margin-left: 13%;">
+             <img src="images/BPPPA.png" alt="" class="partnerlogo"  style="height: 100px; width: 130px;">
              <h3 class="partnerconhead">Implementing Partner</h3>
              <h3 class="partnerconhead">BPPPA</h3>
         <p class="partnerpara">The collaboration between TTC and its implementing partner, the Balochistan Public Private Partnership Authority (BPPPA), represents a strategic effort to strengthen development initiatives in the region through effective public-private collaboration. By leveraging the expertise, resources, and institutional capacity of both entities, this partnership aims to deliver sustainable infrastructure and service solutions tailored to the needs of Balochistan.
@@ -581,6 +763,101 @@ Overall, the TTC–BPPPA partnership stands as a model for cooperative developme
 
 </div>
 
+</section>
+<section  class="section">
+    
+            <h2 id="ab">Meet Our Team</h2>
+            <div class="team" style="margin-top: -10px;">
+              <div class="team-member">
+                <img src="Images/Mr Shahid.jpeg"  alt="">
+                <h3>Mr. Shahid</h3>
+                <p>Head of the Chapter</p>
+              </div>
+              <div class="team-member">
+                <img src="Images/Sir Fida.jpeg " alt="">
+                <h3>Mr. Fida Muhammad</h3>
+                <p>Chapter Coordinator</p>
+              </div> 
+              <div class="team-member">
+                <img src="Images/Sir obed paise dene wakla.jpeg" alt="">
+                <h3>Mr. Obaid</h3>
+                <p>Finance Officer</p>
+              </div>
+            </div>
+             <div class="team" style="margin-top: -10px;">
+              <div class="team-member">
+                <img src="Images/rashid.jpeg"  alt="">
+                <h3>Mr. Rashid</h3>
+                <p>Lab Assistant</p>
+              </div>
+              <div class="team-member">
+                <img src="Images/rozina.jpeg" alt="">
+                <h3>Miss Rozina</h3>
+                <p>Front Desk Officer</p>
+              </div>
+              <div class="team-member">
+                <img src="Images/saddam.jpeg"  alt="">
+                <h3>Mr. Saddam Hussain</h3>
+                <p>Admission and Examination Officer</p>
+    
+              
+            </div>
+              </div>
+             
+
+</div>
+
+                 <div class="values">
+        <div class="valuediv">
+          <h2>Our Mission</h2>
+          <p class="valuepara">
+            Prioritizing the development of a demand-driven, dynamic, and integrated technical education and vocational training service, Contributes to economic growth, innovation, and overall global competitiveness.</p>
+            </div>
+             <div class="valuediv">
+              <h2>Our Values</h2>
+         <p class="valuepara"> Technical Training Center (TTC Hub) values excellence, practical skills, and integrity, while promoting innovation, discipline, and continuous learning. It fosters collaboration and inclusivity, ensures safety, and prepares students for successful careers.
+</p>
+        </div>
+                   <div class="valuediv">
+            <h2>Our Vision</h2>
+            <p class="valuepara">
+              To be a leading center of excellence in technical and vocational education, empowering individuals with innovative skills and knowledge to contribute effectively to the economic and social development of Pakistan.</p>
+          </div>
+        
+          
+        </div> 
+                 <div class="why"> 
+            <h2>Why TTC Hub</h2>
+          
+              <div class="whydiv">
+                 <div>
+                    <div>Market-Driven Skill Development</div>
+             <div>State-of-the-Art Facilities</div>
+             <div> Free Equipments for Practical</div>
+            </div>
+             <div> 
+                <div>Free Wifi</div>
+               <div>Experienced Faculty</div>
+               <div>Free Transport</div>
+                </div>
+            <div>
+                <div> Affordable Education</div>
+              <div>Extra Curriculum</div>
+            <div>Focus on Youth Empowerment</div>
+        </div>
+             <div>
+                <div>Strong Job Placement Support</div>
+        <div>Entrepreneurial Training</div>
+     <div>Enable to compete with other region</div>
+    </div>
+              </div>
+          </div>
+          
+   
+          </div>
+        </div>
+
+ 
 </section>
 <section>
      <div class="map">
