@@ -11,6 +11,8 @@
 <style>
 
 body{
+ 
+
 margin:0;
 font-family:Arial;
 background:white;
@@ -42,16 +44,14 @@ padding:15px 40px;
 background:white;
 border-bottom:7px solid rgb(190, 2, 2);
 }
-.nav{
+.nav div{
   align-items: center;
-  
 display: flex;
-justify-content: space-around;
+
 
 }
-.link{
-    margin-left: 1150px;
-
+nav{
+justify-content: flex-end;
 }
 .nav a{
   
@@ -224,7 +224,9 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 margin-top:40px;
 }
-
+#ab{
+    margin-top: 90px;
+}
 .card{
 border:2px solid green;
 padding:20px;
@@ -258,6 +260,22 @@ font-weight:bold;
 color:green;
 }
 
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -70px;
+}
+.gallerydiv .gpic{
+     object-fit: cover;
+         margin: 10px;
+
+
+       
+}
+.gpic{
+    width: 400px;
+     height: 400px;
+}
 /* Blue Highlight Section */
 
 .highlight{
@@ -320,11 +338,11 @@ footer .social-links a:active {
     
  }
  .valuediv{
-    background-color:rgba(236, 248, 236, 0.7) ;
+    background:linear-gradient(to bottom, #ffffff, #f1fef5) ;
     margin: 50px;
     padding: 30px;
     border: 3px solid rgb(233, 232, 232);
-    color: green;
+    color: rgb(1, 79, 22);
     border-radius: 15px;
    
     
@@ -351,8 +369,9 @@ footer .social-links a:active {
  }
  .why{
     border: 3px solid rgb(233, 232, 232) ;
-    margin: 40px;
-    padding: 40px;}
+    margin-top: 40px;
+    padding: 40px;
+}
     .whydiv{
         display: flex;
         justify-content: space-around;
@@ -360,144 +379,351 @@ footer .social-links a:active {
         text-align: left;
         font-size: 20px;
         line-height: 1.5em;
-        margin: 40px;
+      
     }
-    /* =========================
-   RESPONSIVE FIX (NO CHANGE TO ORIGINAL CSS)
-========================= */
+   .terms{
+    margin-left: 40px;
+   }
+   @media(max-width:768px){
 
-/* Fix navigation without touching original */
-@media (max-width: 1200px) {
-  .link {
-    margin-left: auto !important;
-  }
-}
+  /* ---------- TOPBAR ---------- */
 
-/* Tablet */
-@media (max-width: 992px) {
+    .topbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 14px;
+    }
 
-  .topbar {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px 20px;
-    text-align: center;
-  }
+    .topbar div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
 
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+    .topbar a{
+        text-decoration: none;
+        color: white;
+        word-break: break-word;
+    }
 
-  .nav {
-    flex-direction: column;
-  }
+    .white-emoji{
+        font-size: 16px;
+    }
 
-  .link {
-    margin-left: 0 !important;
-    margin-top: 10px;
-  }
 
-  .story {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
+    /* ---------- NAVBAR ---------- */
 
-  .storyhead,
-  .para1 {
-    margin-left: 0;
-    text-align: center;
-  }
+    nav{
+        padding: 10px 15px;
+    }
 
-  .partnerdiv {
-    flex-direction: column;
-  }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
-  .partnercont img {
-    margin: 0 auto;
-    display: block;
-  }
+    .logo img,
+    .logo{
+        width: 120px;
+        height: auto;
+    }
 
-  .values {
-    flex-direction: column;
-  }
+    .link{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 
-  .team {
-    flex-wrap: wrap;
-  }
+    .link a{
+        text-decoration: none;
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+    #about{
+        padding: 20px 15px;
+    }
 
-  .whydiv {
-    flex-direction: column;
-    text-align: center;
-  }
+    .story{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 
-  .stats {
-    flex-wrap: wrap;
-  }
-}
+    .storyPic{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: 12px;
+    }
 
-/* Mobile */
-@media (max-width: 768px) {
+    .storyhead{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 
-  .hero {
-    height: auto;
-    padding: 40px 20px;
-  }
+    .storyspan{
+        color: #ff6600;
+    }
 
-  .hero h1 {
-    font-size: 28px;
-  }
+    .para1{
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 0 5px;
+    }
 
-  .hero p {
-    font-size: 16px;
-  }
+    .seemore{
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-  .nav a {
-    display: block;
-    margin: 8px 0;
-  }
+    .stats{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
 
-  .courses {
-    grid-template-columns: 1fr;
-  }
+    .stats div{
+        background: #f5f5f5;
+        padding: 20px 10px;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: bold;
+    }
 
-  .team-member img {
-    width: 200px;
-    height: 200px;
-  }
+    .statspan{
+        font-size: 14px;
+        font-weight: normal;
+        color: #666;
+    }
+   #partner{
+        padding: 25px 15px;
+    }
 
-  .valuediv {
-    margin: 20px;
-  }
+    .partnerhead{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
 
-  .why {
-    padding: 20px;
-  }
+    .partnerdiv{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
 
-  iframe {
-    height: 250px;
-  }
-}
+    .partnercont{
+        background: #ffffff;
+        padding: 20px 15px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        text-align: center;
+    }
 
-/* Small phones */
-@media (max-width: 480px) {
+    .partnerlogo{
+        max-width: 100%;
+        height: auto !important;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
 
-  .section {
-    padding: 40px 5%;
-  }
+    .partnerconhead{
+        font-size: 20px;
+        margin: 8px 0;
+        line-height: 1.4;
+    }
 
-  .hero h1 {
-    font-size: 22px;
-  }
+    .partnerpara{
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: justify;
+        margin-top: 12px;
+    }
+     .highlight{
+        padding: 25px 15px;
+        text-align: center;
+    }
 
-  .topbar a {
-    font-size: 12px;
-  }
+    .highlight h2{
+        font-size: 24px !important;
+        letter-spacing: 1px !important;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
 
-  button {
-    width: 100%;
-  }
-}
+    .pathway{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .pathway div{
+        width: 100%;
+        max-width: 320px;
+        padding: 15px 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+      .section{
+        padding: 25px 15px;
+    }
+
+    .section img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .section h2{
+        text-align: center;
+        font-size: 28px;
+        margin: 25px 0 20px;
+    }
+
+
+    /* ---------- TEAM ---------- */
+
+    .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px !important;
+    }
+
+    .team-member{
+        width: 100%;
+        max-width: 320px;
+        background: #ffffff;
+        padding: 20px 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .team-member img{
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .team-member h3{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .team-member p{
+        font-size: 15px;
+        color: #666;
+    }
+
+
+    /* ---------- VALUES ---------- */
+
+    .values{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+    .valuediv{
+        background: #f8f8f8;
+        padding: 20px 15px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .valuediv h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .valuepara{
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+
+
+    .why{
+        margin-top: 40px;
+    }
+
+    .why h2{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .whydiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .whydiv > div{
+        background: #ffffff;
+        padding: 18px 15px;
+  
+       
+    }
+
+    .whydiv li{
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 10px;
+    }
+     .gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px !important;
+        align-items: center;
+    }
+
+    .gallerydiv{
+        width: 100%;
+        max-width: 340px;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .gpic{
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .gallerydiv p{
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+   }
 </style>
 </head>
 
@@ -513,22 +739,23 @@ footer .social-links a:active {
 <header>
 
 
-<nav>  
-    <div class="nav">
-    <div class="logo">
-<a href=""><img src="logo.png" alt="" class="logo"></a></div>
+<div class="nav">  
+    <div>
+   
+<img src="logo.png" alt="" class="logo">
 <div class="link">
+  <nav>
 <a href="index.html">Home</a>
 <a href="#about">About</a>
 <a href="#trade">Trade</a>
 <a href="#partner">Partner</a>
 <!-- <a href="#">Programs</a> -->
 <!-- <a href="#">Campus</a> -->
-<a href="#">Gallery</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
+  </nav>
+
 </div>
-</div>
-</nav>
 
 </header>
 
@@ -709,7 +936,7 @@ Overall, the TTC–BPPPA partnership stands as a model for cooperative developme
 </div>
 
 <div class="card">
-<img src="images/culinary.jpg" alt="Culinary Arts">
+<img src="images/culinaryart.jpg" alt="Culinary Arts">
 <h3>Culinary Arts</h3>
 <p>Preparation and presentation of food.</p>
 </div>
@@ -765,8 +992,18 @@ Overall, the TTC–BPPPA partnership stands as a model for cooperative developme
 
 </section>
 <section  class="section">
-    
+      <div >             
+          <img src="images/organizationalstructure.jpeg" alt="">
+        </div>
             <h2 id="ab">Meet Our Team</h2>
+            <div class="team" style="margin-top: -10px;">
+              <div class="team-member">
+                <img src="Images/Director.png"  alt="">
+                <h3>Miss Waheeda Mahesar</h3>
+                <p>Executive Director</p>
+              </div>
+             
+            </div>
             <div class="team" style="margin-top: -10px;">
               <div class="team-member">
                 <img src="Images/Mr Shahid.jpeg"  alt="">
@@ -807,6 +1044,8 @@ Overall, the TTC–BPPPA partnership stands as a model for cooperative developme
 
 </div>
 
+
+
                  <div class="values">
         <div class="valuediv">
           <h2>Our Mission</h2>
@@ -823,41 +1062,137 @@ Overall, the TTC–BPPPA partnership stands as a model for cooperative developme
             <p class="valuepara">
               To be a leading center of excellence in technical and vocational education, empowering individuals with innovative skills and knowledge to contribute effectively to the economic and social development of Pakistan.</p>
           </div>
-        
           
         </div> 
+         
                  <div class="why"> 
             <h2>Why TTC Hub</h2>
           
               <div class="whydiv">
                  <div>
-                    <div>Market-Driven Skill Development</div>
-             <div>State-of-the-Art Facilities</div>
-             <div> Free Equipments for Practical</div>
+                    <div><li>Market-Driven Skill Development</li></div>
+             <div><li>State-of-the-Art Facilities</li></div>
+             <div> <li>Free Equipments for Practical</li></div>
             </div>
              <div> 
-                <div>Free Wifi</div>
-               <div>Experienced Faculty</div>
-               <div>Free Transport</div>
+                <div><li>Free Wifi</li></div>
+               <div><li>Experienced Faculty</li></div>
+               <div><li>Free Transport</li></div>
                 </div>
             <div>
-                <div> Affordable Education</div>
-              <div>Extra Curriculum</div>
-            <div>Focus on Youth Empowerment</div>
+                <div> <li>Affordable Education</li></div>
+              <div><li>Extra Curriculum</li></div>
+            <div><li>Focus on Youth Empowerment</li></div>
         </div>
              <div>
-                <div>Strong Job Placement Support</div>
-        <div>Entrepreneurial Training</div>
-     <div>Enable to compete with other region</div>
+                <div><li>Strong Job Placement Support</li></div>
+        <div><li>Entrepreneurial Training</li></div>
+     <div><li>Enable to compete with other region</li></div>
     </div>
               </div>
           </div>
           
    
           </div>
+          
         </div>
 
  
+</section>
+<section class="section">
+  
+    <div class="gallery">
+
+              <div class="gallerydiv">
+                <img src="Images/chefday.jpg"  alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/toolkitdestribution.jpeg" alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/mobilization.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+             <div class="gallerydiv">
+                <img src="Images/assessment.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+              </div>
+               <div class="gallery" style="margin-top: -10px;">
+
+              <div class="gallerydiv">
+                <img src="Images/chefday.jpg"  alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/toolkitdestribution.jpeg" alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/mobilization.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+             <div class="gallerydiv">
+                <img src="Images/assessment.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+              </div>
+               <div class="gallery" style="margin-top: -10px;">
+
+              <div class="gallerydiv">
+                <img src="Images/chefday.jpg"  alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/toolkitdestribution.jpeg" alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/mobilization.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+             <div class="gallerydiv">
+                <img src="Images/assessment.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+              </div>
+               <div class="gallery" style="margin-top: -10px;">
+
+              <div class="gallerydiv">
+                <img src="Images/chefday.jpg"  alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/toolkitdestribution.jpeg" alt="" class="gpic">
+                <p></p>
+              </div>
+
+              <div class="gallerydiv">
+                <img src="Images/mobilization.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+             <div class="gallerydiv">
+                <img src="Images/assessment.jpg"  alt="" class="gpic">
+                <p></p>
+            </div>
+
+              </div>
 </section>
 <section>
      <div class="map">
