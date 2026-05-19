@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>ZABTech-Hub</title>
+    <link rel="icon" type="image/x-icon" href="Images/icon.png" id="icon"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    
+
+body{
+margin:0;
+font-family:Arial;
+background:white;
+}
+
+/* Top Bar */
+.topbar{
+    display:flex;
+justify-content:space-between;
+background:rgb(1, 84, 123);
+padding:8px 40px;
+}
+.topbar a{
+
+color:white;
+text-decoration: none;
+font-size: 14px;
+
+
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+border-bottom:7px solid rgb(190, 2, 2);
+}
+.nav{
+  align-items: center;
+  
+display: flex;
+justify-content: space-around;
+
+}
+.link{
+    margin-left: 1150px;
+
+}
+.nav a{
+  
+margin:0 15px;
+text-decoration:none;
+color:green;
+font-weight:bold;
+
+}
+
+.link a:hover{
+color:rgb(9, 89, 174);
+font-size:20px ;
+border: 1px solid rgb(194, 194, 194);
+border-radius: 10px;
+padding: 8px;
+}
+.link a:active{
+    color: rgb(190, 2, 2);
+}
+
+/* Hero */
+
+.hero{
+height:500px;
+background:url("images/bg.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.story{
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.para1{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+    border:1px solid rgb(219, 219, 219) ;
+    padding: 20px;
+    margin-left: 90px;
+    line-height: 1.4;
+}
+.storyPic{
+   border-radius: 5%;
+}
+.storyhead{
+    margin-top: -10px;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    margin-left: 90px;
+    text-transform: uppercase;
+}
+.storyspan{
+    color: rgb(9, 89, 174);
+}
+.hero h1{
+font-size:50px;
+background:rgba(0,0,0,0.6);
+padding:12px 20px;
+border-left:6px solid yellow;
+}
+
+.hero p{
+font-size:20px;
+background:rgba(0,128,0,0.7);
+padding:8px 15px;
+}
+.logo{
+   height: 110px; 
+   width: 100px;
+   margin-left: 15px;
+}
+/* Button */
+
+button{
+background:yellow;
+border:none;
+padding:12px 25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:rgb(9, 89, 174);
+color:white;
+}
+
+/* Section */
+
+.section{
+padding:70px 10%;
+text-align:center;
+}
+
+.section h2{
+color:rgb(190, 2, 2);
+font-family: 'Times New Roman';
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* Stats */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top: 100px;
+}
+
+.stats div{
+font-size:40px;
+font-weight:bold;
+color:rgb(9, 89, 174);
+padding-bottom:5px;
+}
+
+.statspan{
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.partnerdiv{
+    display: flex;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: space-around;
+    
+ 
+}
+
+.partnercont{
+    margin: 30px;
+    color: rgb(85, 85, 85);
+    justify-content: space-around;
+
+}
+.partnercont img{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.partnerconhead{
+
+text-align: center;
+color:rgb(5, 94, 5);
+}
+
+.partnerhead{
+    font-family: 'Times New Roman';
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+/* Courses */
+.courses{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+.ab{
+    margin-top: 90px;
+}
+.card{
+border:2px solid green;
+padding:20px;
+border-radius:8px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+color:black;
+}
+
+.card:hover{
+border-color:rgb(190, 2, 2);
+background:#f0f8ff;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Same proportion for all */
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Pathway */
+
+.pathway{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+font-weight:bold;
+color:green;
+}
+
+/* Blue Highlight Section */
+
+.highlight{
+background:#e6f2ff;
+padding:60px;
+margin-top:40px;
+}
+
+/* iframe */
+iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 100px;
+    }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: grey;
+    text-align: center;
+    padding: 70px;
+    margin-top: 40px;
+    height: auto;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer .social-links a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+footer .social-links a:active {
+    color: #c2c3c4;
+}
+
+.small {
+    margin: 20px;
+}
+.otherlinks .prt {
+    text-decoration: none;
+    color: grey;
+}
+.prt {
+    font-size: 1rem;
+}
+.white-emoji {
+  filter: brightness(0) invert(1); /* turns emoji white */
+  font-size: 20px;
+  margin-right: 8px;
+}
+ .values{
+    display:flex;
+    justify-content: space-around;
+    
+ }
+ .valuediv{
+    background-color:rgba(236, 248, 236, 0.7) ;
+    margin: 50px;
+    padding: 30px;
+    border: 3px solid rgb(233, 232, 232);
+    color: green;
+    border-radius: 15px;
+   
+    
+ }
+ .valuepara{
+ text-align: justify;
+ font-size: 20px;
+ line-height:1.5em;
+ }
+ .team{
+    display: flex;
+    justify-content: space-around;
+ }
+ .team-member{
+    margin:40px;
+ }
+ .team-member img{
+    width:300px;
+    height: 300px;
+    border-radius: 100%;
+ }
+ .seemore{
+    text-decoration: none;
+ }
+ .why{
+    border: 3px solid rgb(233, 232, 232) ;
+    margin: 40px;
+    padding: 40px;}
+    .whydiv{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.5em;
+        margin: 40px;
+    }
+      .container {
+  
+      margin: 40px;
+      color: #737373;
+      text-align: left;
+      font-family: 'Times New Roman';
+  
+    }
+.container h1{
+    color:rgb(9, 89, 174) ;
+
+    text-transform: uppercase;
+}
+.container h2{
+    color:rgb(80, 80, 80) ;
+    
+}
+   .termscontainer{
+   
+  background-color: rgba(236, 236, 236, 0.7)
+   }
+  </style>
+</head>
+<body class="termscontainer">
+ 
+<div class="topbar">
+<div><span class="white-emoji">📞</span><a href="https://wa.me/92336661117?text=Hello%20Naz,%20I%20found%20your%20website!" >+92 336 661117</a></div>
+<div> <span class="white-emoji">✉</span><a href="mailto:careers.hub@zabtech.edu.pk">careers.hub@zabtech.edu.pk</a></div>
+<div><span class="white-emoji">📌</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Pak German Technical Training Centre on Hub Chowki Road, near Hub Bypass, in Hub, Balochistan</a></div>
+<div><span class="white-emoji">⏱</span><a href="https://maps.app.goo.gl/pNZfBBLj7ZKmxFdJ8">Monday - Friday, 9:00 AM to 5:00 PM</p></a></div>
+</div>
+
+<header>
+
+
+<nav>  
+    <div class="nav">
+    <div class="logo">
+<a href=""><img src="logo.png" alt="" class="logo"></a></div>
+<div class="link">
+<a href="index.html">Home</a>
+<a href="#about">About</a>
+<a href="#trade">Trade</a>
+<a href="#partner">Partner</a>
+<!-- <a href="#">Programs</a> -->
+<!-- <a href="#">Campus</a> -->
+<a href="#">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+</header>
+
+  <div class="container">
+    <h1>Terms and Conditions</h1>
+    <p>Last updated: May 16, 2025</p>
+
+    <p>Please read these terms and conditions ("Terms and Conditions") carefully before using our website.</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using our service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the service.</p>
+
+    <h2>2. Use of the Site</h2>
+    <p>You agree not to misuse the site or help anyone else do so. This includes attempting to gain unauthorized access to the site or content.</p>
+
+    <h2>3. Intellectual Property</h2>
+    <p>The website and its original content, features, and functionality are and will remain the exclusive property of <a href="about.html">Zabtech Hub</a>.</p>
+
+    <h2>4. Termination</h2>
+    <p>We may terminate or suspend access to our service immediately, without prior notice or liability, for any reason whatsoever.</p>
+
+    <h2>5. Changes to Terms</h2>
+    <p>We reserve the right to modify or replace these Terms at any time. We will try to provide at least 30 days' notice prior to any new terms taking effect.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions about these Terms, please contact us at <a href="mailto:">principal.hub@zabtech.edu.pk</a>.</p>
+  </div>
+    <footer>
+      <div class="social-links">     
+       <a href="https://www.facebook.com/share/15FbZraBwF/" target="_blank" class="fab fa-facebook-f"></a>
+       <a href="https://x.com/SzabistZabtech" target="_blank" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/zabtech.hub?igsh=OTd1amF5cmw1dHp0" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/szabistzabtech?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fab fa-linkedin-in"></a>
+    </div>
+    <hr>
+    <div class="small">
+        <small>&copy;Copyright 2025 <span style="color: rgb(192, 192, 192);">ZABTech-Hub</span> All Rights Reserved.</small>
+      </div>
+    <div class="otherlinks">
+       
+        <a class="prt" href="privacy.html"><small>Privacy Policy</small></a>&emsp;
+        <a class="prt" href="terms.html"><small>Terms & Conditions</small></a>
+        </div>
+    </footer>
+     <script src="app.js"></script>
+    <script src="app2.js"></script>
+
+</body>
+</html>
