@@ -447,7 +447,7 @@ text-justify: inter-word;
     text-align:center;
     margin-top:10px;
     padding: 10px;
-    background:linear-gradient(to right, #dbdbdb, #ffffff);
+        background:linear-gradient(to right, #c4c3c3, #ececec, #ffffff);
   }
 .link a:hover{
     border: none;
