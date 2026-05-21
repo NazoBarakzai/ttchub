@@ -201,9 +201,7 @@ text-justify: inter-word;
     margin-left: 90px;
     margin-right: 90px;
 }
-.zabimg{
- margin-right:60px;
-}
+
 .partnerconhead{
 
 text-align: center;
@@ -555,7 +553,9 @@ text-justify: inter-word;
         text-align: center;
         margin-bottom: 25px;
     }
-
+.zabimg{
+ margin-right:60px;
+}
     .partnerdiv{
         display: flex;
         flex-direction: column;
