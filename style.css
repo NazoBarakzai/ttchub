@@ -515,7 +515,8 @@ text-justify: inter-word;
         font-size: 15px;
         line-height: 1.8;
         padding: 0 5px;
-        width: 350px;
+        width: 300px;
+     margi-left:-40px;
     }
 
     .seemore{
