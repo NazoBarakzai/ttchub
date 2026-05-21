@@ -433,9 +433,9 @@ text-justify: inter-word;
 
     /* ---------- NAVBAR ---------- */
 
-    .menu-btn{
+     .menu-btn{
     display:block;
-    color:rgb(9, 89, 174) ;
+    color:rgb(180, 3, 3) ;
     margin-left:11px;
     margin-bottom: 6px;
   }
@@ -446,7 +446,11 @@ text-justify: inter-word;
     width:100%;
     text-align:center;
     margin-top:10px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    background:linear-gradient(to bottom, #c2c3c4, #ffffff);
   }
+    
 .link a:hover{
     border: none;
 }
