@@ -449,8 +449,13 @@ text-justify: inter-word;
     padding: 10px;
         background:linear-gradient(to right, #c4c3c3, #ececec, #ffffff);
   }
+.link a{
+    padding:5px;
+
+}
 .link a:hover{
     border: none;
+   background: none;
 }
   .link.active{
     display:flex;
