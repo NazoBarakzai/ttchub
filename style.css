@@ -515,8 +515,8 @@ text-justify: inter-word;
         font-size: 15px;
         line-height: 1.8;
         padding: 0 5px;
-        width: 300px;
-     margi-left:-40px;
+    
+     
     }
 
     .seemore{
@@ -556,10 +556,7 @@ text-justify: inter-word;
         text-align: center;
         margin-bottom: 25px;
     }
-.zabimg{
- margin-left:-100px;
-}
-    .partnerdiv{
+.partnerdiv{
         display: flex;
         flex-direction: column;
         gap: 25px;
