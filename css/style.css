@@ -279,7 +279,7 @@
 
   /* ─── HERO ─── */
   .hero {
-    background-image: linear-gradient(rgba(0, 27, 54, 0.8), rgba(29, 32, 36, 0.8)), url(""https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600"");
+    background-image: linear-gradient(rgba(0, 27, 54, 0.8), rgba(29, 32, 36, 0.8)), url("https://yourdomain.com/asset/images/ttc.jpeg");
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
