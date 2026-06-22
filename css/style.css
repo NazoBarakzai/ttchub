@@ -279,7 +279,7 @@
 
   /* ─── HERO ─── */
   .hero {
-     background: linear-gradient(rgba(0, 27, 54, 0.8), rgba(29, 32, 36, 0.8)), url(asset/images/ttc.jpeg);
+     background: linear-gradient(rgba(0, 27, 54, 0.8), rgba(29, 32, 36, 0.8)), url(../asset/images/ttc.jpeg);
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
