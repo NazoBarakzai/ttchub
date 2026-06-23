@@ -65,7 +65,7 @@
   <a href="#team" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Team</a>
   <a href="#gallery" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Gallery</a>
   <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Contact</a>
-  <a href="#apply" class="btn-primary" onclick="document.querySelector('.mobile-menu').classList.remove('open')" style="text-align:center;margin-top:1rem;">Apply Now</a>
+  <a href="#apply" class="btn-primary" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Apply Now</a>
 </div>
 
 <!-- HERO -->
@@ -162,7 +162,7 @@
       </div>
       <div class="partner-card">
         <div class="partner-card-top">
-          <img src="asset/images/zabtech-removebg-preview.png" alt="SZABIST ZABTech" class="partner-logo">
+          <img src="asset/images/zabtech.png" alt="SZABIST ZABTech" class="partner-logo">
           <div class="partner-meta">
             <div class="partner-role">Adopted By</div>
             <div class="partner-name">SZABIST ZABTech (iTVE)</div>
@@ -182,7 +182,7 @@
       </div>
       <div class="partner-card">
         <div class="partner-card-top">
-          <img src="asset/ttchub/images/BPPPA.png" alt="BPPPA" class="partner-logo">
+          <img src="asset/images/BPPPA.png" alt="BPPPA" class="partner-logo">
           <div class="partner-meta">
             <div class="partner-role">Implementing Partner</div>
             <div class="partner-name">BPPPA</div>
@@ -723,7 +723,7 @@
       <h2 class="section-title">Apply Now — It's Free</h2>
       <p class="section-sub">Fill out the form below and our admissions team will contact you within 24 hours.</p>
     </div>
-    <form id="applyForm">
+<form id="applyForm" onsubmit="handleApply(event)">
     <div class="apply-form reveal">
       <div class="form-row">
         <div class="form-group">
@@ -773,8 +773,9 @@
         <label>Message (Optional)</label>
         <textarea name="message" rows="3" placeholder="Any questions or additional information?"></textarea>
       </div>
-      <button class="form-submit" onclick="handleApply(event)">Submit Application ✓</button></form>
-    </div>
+      <button type="submit" class="form-submit">Submit Application ✓</button>
+     </div>
+</form>
   </div>
 </section>
 
@@ -828,7 +829,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Technical Training Center Hub. All Rights Reserved.</span>
+      <span>&copy; 2026 Technical Training Center Hub. All Rights Reserved.</span>
       <div class="footer-bottom-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms & Conditions</a>
@@ -850,26 +851,9 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach(el => obs.observe(el));
 
-  // Apply form handler
-  function handleApply(e) {
-    e.preventDefault();
-    const btn = e.target;
-    const name = document.querySelector('.apply-form input[type="text"]').value;
-    const phone = document.querySelector('.apply-form input[type="tel"]').value;
-    const trade = document.querySelector('.apply-form select').value;
-    if (!name || !phone || !trade) {
-      btn.textContent = '⚠ Please fill required fields';
-      btn.style.background = '#8B1C1C';
-      setTimeout(() => { btn.textContent = 'Submit Application ✓'; btn.style.background = ''; }, 2500);
-      return;
-    }
-    const msg = `Hello TTC Hub! I'd like to apply for the *${trade}* program.%0AName: *${name}*%0APhone: *${phone}*`;
-    window.open(`https://wa.me/92336661117?text=${msg}`, '_blank');
-    btn.textContent = '✓ Redirecting to WhatsApp...';
-    btn.style.background = '#1A6B3C';
-  }
+ 
 </script>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
